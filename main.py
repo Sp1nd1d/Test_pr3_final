@@ -62,3 +62,11 @@ class convertor:
             return value1, value2, option
         else:
             return 'Ошибка'
+
+    def quantity(self, x):
+        global quantity1
+        try:
+            quantity1 = float(x)
+            return quantity1
+        except:
+            return 'Ошибка'

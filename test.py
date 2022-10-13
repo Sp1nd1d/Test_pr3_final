@@ -12,3 +12,8 @@ def test_value_choose():
     assert convertor().value_choose(44) == ('Берковец', 'Килограмм', 44)
     assert convertor().value_choose(55) == ('Верст', 'Метр', 55)
     assert convertor().value_choose(25) == ('Ошибка')
+
+def test_quantity():
+    assert convertor().quantity(25) == 25
+    assert convertor().quantity(123) == 123
+    assert convertor().quantity('ABC') == 'Ошибка'
