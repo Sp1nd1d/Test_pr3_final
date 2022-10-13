@@ -70,3 +70,41 @@ class convertor:
             return quantity1
         except:
             return 'Ошибка'
+
+    def calculate(self):
+        global option, quantity1, answer, value1, value2
+        if option == 1:
+            answer = quantity1 * 0.00062
+            return answer
+        elif option == 2:
+            answer = quantity1 * 0.91
+            return answer
+        elif option == 3:
+            answer = quantity1 * 0.45
+            return answer
+        elif option == 4:
+            answer = quantity1 * 6.35
+            return answer
+        elif option == 5:
+            answer = quantity1 * 0.76
+            return answer
+        if option == 11:
+            answer = quantity1 * 2.13
+            return answer
+        elif option == 22:
+            answer = quantity1 * 0.71
+            return answer
+        elif option == 33:
+            answer = quantity1 * 0.16
+            return answer
+        elif option == 44:
+            answer = quantity1 * 163.8
+            return answer
+        elif option == 55:
+            answer = quantity1 * 1066.8
+            return answer
+
+
+print(convertor().value_choose(1))
+print(convertor().quantity(100))
+print(convertor().calculate())
